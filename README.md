@@ -13,7 +13,7 @@ This project demonstrates practical implementation of:
 ---
 
 # 📌 Features
-
+```plaintext
 ✅ Real-time weather updates
 ✅ Global city weather search
 ✅ Temperature, humidity, and wind speed display
@@ -22,7 +22,7 @@ This project demonstrates practical implementation of:
 ✅ Responsive UI using Bootstrap
 ✅ Error handling for invalid cities/API issues
 ✅ Clean and beginner-friendly code structure
-
+```
 ---
 
 # 🛠 Technologies Used
