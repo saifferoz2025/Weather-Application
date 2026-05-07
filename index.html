@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Weather App</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">🌍 Global Weather App</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow p-4" id="weatherCard">
+                <div class="mb-3">
+                    <select id="cityInput" class="form-select">
+                        <option value="" selected disabled>Select a City</option>
+                        <!-- Pakistan Top Cities -->
+                        <option value="Karachi,PK">Karachi, Pakistan</option>
+                        <option value="Lahore,PK">Lahore, Pakistan</option>
+                        <option value="Islamabad,PK">Islamabad, Pakistan</option>
+                        <option value="Rawalpindi,PK">Rawalpindi, Pakistan</option>
+                        <option value="Faisalabad,PK">Faisalabad, Pakistan</option>
+                        <option value="Multan,PK">Multan, Pakistan</option>
+                        <option value="Peshawar,PK">Peshawar, Pakistan</option>
+                        <option value="Quetta,PK">Quetta, Pakistan</option>
+                        <option value="Gujranwala,PK">Gujranwala, Pakistan</option>
+                        <option value="Sargodha,PK">Sargodha, Pakistan</option>
+                        <option value="Gilgit,PK">Gilgit, Pakistan</option>
+                        <option value="Muzaffarabad,PK">Muzaffarabad, Kashmir</option>
+                        <option value="Dhaka,BD">Dhaka, Bangladesh</option>
+                        <option value="Kathmandu,NP">Kathmandu, Nepal</option>
+                        <option value="Malé,MV">Malé, Maldives</option>
+                        <option value="Colombo,LK">Colombo, Sri Lanka</option>
+                        <option value="Tehran,IR">Tehran, Iran</option>
+                        <option value="Baghdad,IQ">Baghdad, Iraq</option>
+                        <option value="Riyadh,SA">Riyadh, Saudi Arabia</option>
+                        <option value="Doha,QA">Doha, Qatar</option>
+                        <option value="Muscat,OM">Muscat, Oman</option>
+                        <option value="Abu Dhabi,AE">Abu Dhabi, United Arab Emirates</option>
+                        <!-- Add world capitals -->
+                        <option value="Washington,US">Washington, USA</option>
+                        <option value="London,UK">London, UK</option>
+                        <option value="Tokyo,JP">Tokyo, Japan</option>
+                        <option value="Paris,FR">Paris, France</option>
+                        <option value="Berlin,DE">Berlin, Germany</option>
+                        <option value="Canberra,AU">Canberra, Australia</option>
+                        <option value="Ottawa,CA">Ottawa, Canada</option>
+                        <option value="Beijing,CN">Beijing, China</option>
+                        <option value="New Delhi,IN">New Delhi, India</option>
+                        <option value="Brasilia,BR">Brasilia, Brazil</option>
+                        <option value="Moscow,RU">Moscow, Russia</option>
+                        <option value="Cairo,EG">Cairo, Egypt</option>
+                        <option value="Bangkok,TH">Bangkok, Thailand</option>
+                        <option value="Rome,IT">Rome, Italy</option>
+                        <option value="Madrid,ES">Madrid, Spain</option>
+                    </select>
+                </div>
+                <div class="d-grid mb-3">
+                    <button id="getWeatherBtn" class="btn btn-primary">Get Weather</button>
+                </div>
+                <div id="weatherResult" class="text-center position-relative"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

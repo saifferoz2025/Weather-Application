@@ -1,0 +1,62 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    transition: background 0.5s;
+    overflow: hidden;
+}
+
+.card {
+    border-radius: 15px;
+    transition: background 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+#weatherResult {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#weatherResult img {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+}
+
+.cloud {
+    position: absolute;
+    top: 20px;
+    width: 100px;
+    opacity: 0.8;
+    animation: floatCloud 30s linear infinite;
+}
+
+@keyframes floatCloud {
+    0% { left: -120px; }
+    100% { left: 100%; }
+}
+
+.rain {
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: #00f;
+    animation: fall 1s linear infinite;
+}
+
+@keyframes fall {
+    0% { top: -20px; opacity: 1; }
+    100% { top: 200px; opacity: 0; }
+}
+
+.flag {
+    width: 30px;
+    height: 20px;
+    margin-left: 5px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+}
